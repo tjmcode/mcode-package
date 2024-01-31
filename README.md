@@ -30,19 +30,6 @@ The current packages bundled by this are:
 3) Jest.JS - our preferred JavaScript testing framework
 
 
-## mcode-log
-
-This is an example of each **mcode.log()**, **mcode.warn(),** and **mcode.exp()** event severity supported by the package...
-
-* JavaScript calls... (see **mcode-log-examples.js**)
-
-<p align="left"><img src=".\.github\images\mcode-log-calls.png" width="720" title="Call examples..."></p>
-
-* Example of the differing severities in the console output...
-
-<p align="left"><img src=".\.github\images\mcode-log-severity.png" width="720" title="Event Severities..."></p>
-
-
 ## Installing
 
 * Use "npm install" to install the 'bundler' and then all required MicroCODE packages...
@@ -52,6 +39,19 @@ npm install mcode-log
 npm install mcode-list
 ...
 ```
+
+## mcode-package (NPM 'Bundling')
+
+This is a console log to demonstrate how the **mcode.log** and **mcode-list** NPM packages are brought together under a single 'mcode' object...
+
+* This shows 'mcode' as logged by its own function '**mcode.debug()**'...
+
+<p align="left"><img src=".\.github\images\mcode-package-loggedview.png" width="720" title="mcode as logged..."></p>
+
+* Notice how the functions from '**mcode-log**' and '**mcode-list**' are all present under '**mcode.***' as if they came from a single NPM package, e.g.: **swap()** and **list()** are from 'mcode-list' and the reset are from 'mcode-log'...
+
+<p align="left"><img src=".\.github\images\mcode-package-functions.png" width="720" title="mcode functions..."></p>
+
 
 ### Testing
 
@@ -70,7 +70,7 @@ npm install --save-dev jest
 npm test
 ```
 
-* A view of the JEST tests in the console...
+* A view of the JEST tests (for 'mcode-log') in the console...
 
 <p align="left"><img src=".\.github\images\mcode-log-jest.png" width="720" title="Jest Results..."></p>
 
