@@ -135,8 +135,10 @@ Contributors names and contact info...
 
 ## Version History
 
+* 0.0.6
+    * Updated README with pictures illustrating how 'mcode-package' brings togther other MicroCODE packages under 'mcode.*'.
 * 0.0.5
-    * Upgraded to 'mcode-log' v0.0.5
+    * Upgraded to 'mcode-log' v0.1.5
 * 0.0.3 - 0.0.4
     * Corrected JSDocs and Jest to DEV ONLY dependencies
 * 0.0.2
