@@ -22,7 +22,8 @@ The current packages bundled by this are:
 
 * **Production**
 1) _None_
-
+2) mcode-log (optional)
+3) mcode-list (optional)
 * **Development**
 1) Node.JS - standard runtime environment
 2) JSDocs - our preferred JavaScript documentation system
@@ -99,7 +100,7 @@ jsdoc.conf.json
 ```
 * To regenerate the JSDocs from all source code use (from project root directory)...
 ```
-jsdoc -c .jsdoc.conf.json
+jsdoc -c .jsdoc.json
 ```
 
 ...then open ./docs/index.html
@@ -134,6 +135,12 @@ Contributors names and contact info...
 
 ## Version History
 
+* 0.0.5
+    * Upgraded to 'mcode-log' v0.0.5
+* 0.0.3 - 0.0.4
+    * Corrected JSDocs and Jest to DEV ONLY dependencies
+* 0.0.2
+    * Published to NPM
 * 0.0.1
     * Initial movement of our internal code into an NPM bundled packages for ease of use in other projects.
 
