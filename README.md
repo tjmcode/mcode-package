@@ -135,7 +135,9 @@ Contributors names and contact info...
 
 ## Version History
 
-* 0.0.6
+* 0.0.8
+    * Upgraded to 'mcode-log' v0.1.8
+* 0.0.6 - 0.0.7
     * Updated README with pictures illustrating how 'mcode-package' brings togther other MicroCODE packages under 'mcode.*'.
 * 0.0.5
     * Upgraded to 'mcode-log' v0.1.5
