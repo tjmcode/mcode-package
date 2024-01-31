@@ -1,0 +1,31 @@
+{
+  "name": "mcode-package",
+  "version": "0.0.1",
+  "description": "An npm package to collect all MicroCODE 'mcode-' packages into a single 'mcode.' namespace. This allows any of the packages to be used independently--mcode-log, mcode-list, etc.--but have them all collected into 'mcode.<function>()' syntax when used togther.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicroCODEIncorporated/mcode-package.git"
+  },
+  "keywords": [
+    "Utility",
+    "Logging",
+    "List",
+    "Processing",
+    "Builder",
+    "MicroCODE"
+  ],
+  "author": "Timothy McGuire",
+  "company": "MicroCODE, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MicroCODEIncorporated/mcode-package/issues"
+  },
+  "homepage": "https://github.com/MicroCODEIncorporated/mcode-package#readme",
+  "dependencies": {
+    "mcode-log": "^0.1.4"
+  }
+}
