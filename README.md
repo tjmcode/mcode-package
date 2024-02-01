@@ -135,6 +135,8 @@ Contributors names and contact info...
 
 ## Version History
 
+* 0.1.6
+    * Changed export to the Univeral Module Defintion (UMD) pattern.
 * 0.1.0 - 0.1.5
     * Rewrote code to load all functions and elements from an included mcode-* package into 'mcode.*'.
     * Removed the need to update this package with explicit references when features are added to a bundled package.
@@ -153,8 +155,6 @@ Contributors names and contact info...
 
 ## Future Development
 
-* 0.0.*
-    * ESM and CJS packaging.
 * 0.0.*
     * Any additional core code we development for general JavaScript MERN coding, debug, and support.
 
