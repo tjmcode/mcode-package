@@ -135,6 +135,9 @@ Contributors names and contact info...
 
 ## Version History
 
+* 0.1.0
+    * Rewrote code to load all functions and elements from an included mcode-* package into 'mcode.*'.
+    * Removed the need to update this package with explicit references when features are added to a bundled package.
 * 0.0.8
     * Upgraded to 'mcode-log' v0.1.8
 * 0.0.6 - 0.0.7

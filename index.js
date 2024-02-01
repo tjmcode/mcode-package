@@ -1,5 +1,6 @@
 // MicroCODE: define this module's name for our 'mcode-log' package
-const moduleName = 'index.js';
+const moduleName = 'mcode-package.js';
+const packageJson = require('./package.json');
 
 // gather all installed mcode-<package> modules into one object
 const mcode = {};
@@ -9,41 +10,14 @@ try
 {
     const mcodeLog = require('mcode-log');
 
-    mcode.ready = mcodeLog.ready;
+    // assign all mcode-log methods to mcode
+    Object.assign(mcode, mcodeLog);
 
-    mcode.vt = mcodeLog.vt;
-
-    mcode.log = mcodeLog.log;
-    mcode.info = mcodeLog.info;
-    mcode.warn = mcodeLog.warn;
-    mcode.error = mcodeLog.error;
-    mcode.done = mcodeLog.error;
-    mcode.debug = mcodeLog.debug;
-
-    mcode.exp = mcodeLog.exp;
-    mcode.fnc = mcodeLog.fnc;
-
-    mcode.logify = mcodeLog.logify;
-    mcode.logifyObject = mcodeLog.logifyObject;
-
-    mcode.simplifyObject = mcodeLog.simplifyObject;
-
-    mcode.ListfyArray = mcodeLog.ListfyArray;
-
-    mcode.extractId = mcodeLog.extractId;
-
-    mcode.isString = mcodeLog.isString;
-    mcode.isObject = mcodeLog.isObject;
-    mcode.isNumber = mcodeLog.isNumber;
-    mcode.isJson = mcodeLog.isJson;
-    mcode.isDate = mcodeLog.isDate;
-    mcode.isTimeStamp = mcodeLog.isTimeStamp;
-
-    mcode.timeStamp = mcodeLog.timeStamp;
+    mcode.log(`MicroCODE 'mcode-package' v${packageJson.version} loaded package: 'mcode-log'`, moduleName, 'success');
 }
 catch (exp)
 {
-    // mcode-log is not installed
+    // mcode-log is not installed - OPTIONAL
 }
 
 // Load: M C O D E - L I S T
@@ -51,13 +25,14 @@ try
 {
     const mcodeList = require('mcode-list');
 
-    mcode.swap = mcodeList.swap
-    mcode.call = mcodeList.call;
+    // assign all mcode-list methods to mcode
+    Object.assign(mcode, mcodeList);
+
+    mcode.log(`MicroCODE 'mcode-package' v${packageJson.version} loaded package: 'mcode-list'`, moduleName, 'success');
 }
 catch (exp)
 {
-    // mcode-list is not installed
+    // mcode-list is not installed - OPTIONAL
 }
-
 
 module.exports = mcode;
