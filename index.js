@@ -1,6 +1,7 @@
 // MicroCODE: define this module's name for our 'mcode-log' package
 const moduleName = 'mcode-package.js';
 const packageJson = require('./package.json');
+const log = require('mcode-log');
 
 // gather all installed mcode-<package> modules into one object
 const mcode = {};
@@ -13,7 +14,8 @@ try
     // assign all mcode-log methods to mcode
     Object.assign(mcode, mcodeLog);
 
-    mcode.log(`MicroCODE 'mcode-package' v${packageJson.version} loaded package: 'mcode-log'`, moduleName, 'success');
+    log.debug(mcode, moduleName);
+    log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-log'`, moduleName);
 }
 catch (exp)
 {
@@ -28,7 +30,8 @@ try
     // assign all mcode-list methods to mcode
     Object.assign(mcode, mcodeList);
 
-    mcode.log(`MicroCODE 'mcode-package' v${packageJson.version} loaded package: 'mcode-list'`, moduleName, 'success');
+    log.debug(mcode, moduleName);
+    log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-list'`, moduleName);
 }
 catch (exp)
 {
