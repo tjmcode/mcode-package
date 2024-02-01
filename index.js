@@ -14,7 +14,6 @@ try
     // assign all mcode-log methods to mcode
     Object.assign(mcode, mcodeLog);
 
-    log.debug(mcode, moduleName);
     log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-log'`, moduleName);
 }
 catch (exp)
@@ -30,7 +29,6 @@ try
     // assign all mcode-list methods to mcode
     Object.assign(mcode, mcodeList);
 
-    log.debug(mcode, moduleName);
     log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-list'`, moduleName);
 }
 catch (exp)
