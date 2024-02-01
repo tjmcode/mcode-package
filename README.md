@@ -135,7 +135,7 @@ Contributors names and contact info...
 
 ## Version History
 
-* 0.1.0 - 0.1.1
+* 0.1.0 - 0.1.3
     * Rewrote code to load all functions and elements from an included mcode-* package into 'mcode.*'.
     * Removed the need to update this package with explicit references when features are added to a bundled package.
 * 0.0.8
