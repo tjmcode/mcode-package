@@ -32,7 +32,11 @@ The current packages bundled by this are:
 
 ## Installing
 
-* Use "npm install" to install the 'bundler' and then all required MicroCODE packages...
+Use "npm install" to install the 'bundler' and then all required MicroCODE packages.
+
+* Get to a terminal session in the local repo folder of your project.
+* Use 'npm install' to load the package(s)...
+
 ```
 npm install mcode-package
 npm install mcode-log
@@ -75,7 +79,6 @@ npm test
 <p align="left"><img src=".\.github\images\mcode-log-jest.png" width="720" title="Jest Results..."></p>
 
 
-
 ## Available Packages
 
 These are the functions we want at the ready in any module for development and debug.
@@ -88,17 +91,24 @@ These are the functions we want at the ready in any module for development and d
 
 ### Documentation
 
-* This entire project is documented with **JSDocs**
+We believe is explicit code documentation, for other users, and for our 'future selves'.<br>
+JSDocs is a standardized system for documenting functions and data structures that produces three (3) primary outputs:
 
-* To install JSDocs use...
+1) Inline documentation for the coder.
+2) Intellisense popup documentation for the coder for every function.
+3) External 'reference manual' documentation for your entire code base, if used consistently.
+
+* This entire project--like all our projects--is documented with **JSDocs**.
+
+* To install JSDocs use, get to a terminal session in the project folder...
 ```
 npm install --save-dev jsdoc
 ```
 * Configure JSDoc processing in...
 ```
-jsdoc.conf.json
+jsdoc.json
 ```
-* To regenerate the JSDocs from all source code use (from project root directory)...
+* To regenerate the JSDocs from all source code, use the following command (from the project root directory)...
 ```
 jsdoc -c .jsdoc.json
 ```
@@ -118,23 +128,26 @@ Contact Timothy McGuire, support@mcode.com.
 | Word or Acronym	| Description/Definition                                |
 |-------------------|-------------------------------------------------------|
 |  **NPM**	        | Node Package Manager, actually “Node PM”, “Node pkgmakeinst” a system to deploy, install, and maintain NodeJS Apps. (PM was a BASH utility).
-|  **NVM**	        | Node Version Manager, a tool that support changing NodeJS versions.
+|  **NVM**	        | Node Version Manager, a tool that supports changing NodeJS versions.
 |  **MERN**         | MongoDB, Express, React, Node JS.
 |  **MongoDB**      | A ‘NoSQL’ database designed for Cloud applications, also referred to as a ‘Document Store’.
 |  **Express**      | Express is *not* a database but rather an ‘extensible routing language’ for communication between a Client and a Server.
 |  **React**        | A Web UI development system, a JavaScript library developed by Facebook and made public—and Open Source—since 2013.
-|  **Node JS**      | A development stack that executes from a local file store—on a local Server—instead of from a network of |  **JSDocs**           | A toolset to automatically generate API-style documentation from source tagging.
+|  **Node JS**      | A development stack that executes from a local file store—on a local Server—instead of from a network of servers.
+|  **JSDocs**       | A toolset to automatically generate API-style documentation from source code tagging.
 
 
 ## Authors
 
-Contributors names and contact info...
+Contributor's names and contact info...
 
-* Timothy J McGuire [@TimothyMcGuire](https://twitter.com/TimothyMcGuire)
+* Timothy McGuire [@TimothyMcGuire](https://twitter.com/TimothyMcGuire) - Founder, President-CEO of MicroCODE, Inc. a software and controls engineering company in Detroit, Michigan USA.
 
 
 ## Version History
 
+* 0.1.7
+    * Improved README examples, corrected typos.
 * 0.1.6
     * Changed export to the Univeral Module Defintion (UMD) pattern.
 * 0.1.0 - 0.1.5
@@ -166,7 +179,9 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ## MicroCODE Mantra
 
-Our slogan mark, distilled from over three decades of developing, testing, installing, and supporting 24x7x365
-manufacturing applications...
+MicroCODE, Inc. was founded in 1987 as a controls engineering and software development company.<br>
+We specialize in manufacturing and quality control applications that must run 24x7x365 for years at a time.
+
+Our slogan, distilled from over three decades of developing, testing, installing, and supporting 24x7x365 manufacturing applications, is..
 
 <p align="left"><img src=".\.github\images\hail-caesar.png" width="720" title="Hail Caesar!"></p>
