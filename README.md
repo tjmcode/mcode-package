@@ -146,6 +146,8 @@ Contributor's names and contact info...
 
 ## Version History
 
+* 0.1.8
+    * Added the display of sub-package versions on load.
 * 0.1.7
     * Improved README examples, corrected typos.
 * 0.1.6

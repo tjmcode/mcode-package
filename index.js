@@ -98,11 +98,12 @@ const mcode = {};
 try
 {
     const mcodeLog = require('mcode-log');
+    const mcodeLogJson = require('mcode-log/package.json');
 
     // assign all mcode-log methods to mcode
     Object.assign(mcode, mcodeLog);
 
-    log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-log'`, moduleName);
+    log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-log' v${mcodeLogJson.version} `, moduleName);
 }
 catch (exp)
 {
@@ -113,11 +114,12 @@ catch (exp)
 try
 {
     const mcodeList = require('mcode-list');
+    const mcodeListJson = require('mcode-list/package.json');
 
     // assign all mcode-list methods to mcode
     Object.assign(mcode, mcodeList);
 
-    log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-list'`, moduleName);
+    log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-list' v${mcodeListJson.version} `, moduleName);
 }
 catch (exp)
 {
