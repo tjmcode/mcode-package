@@ -146,6 +146,9 @@ Contributor's names and contact info...
 
 ## Version History
 
+* 0.3.0
+    * Upgrade 'mcode-log' to v0.3.0
+    * Upgrade 'mcode-list' to v0.3.0
 * 0.2.6
     * Upgrade 'mcode-log' to v0.2.6
 * 0.2.5
