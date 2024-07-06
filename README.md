@@ -146,53 +146,57 @@ Contributor's names and contact info...
 
 ## Version History
 
+* 0.4.0
+    - Synchronized mcode-data, mcode-log, mcode-list, mcode-package.
+* 0.3.8
+    - Moved all data handling functions into new mcode-data package.
 * 0.3.0
-    * Upgrade 'mcode-log' to v0.3.0
-    * Upgrade 'mcode-list' to v0.3.0
+    - Upgrade 'mcode-log' to v0.3.0
+    - Upgrade 'mcode-list' to v0.3.0
 * 0.2.6
-    * Upgrade 'mcode-log' to v0.2.6
+    - Upgrade 'mcode-log' to v0.2.6
 * 0.2.5
-    * Upgrade 'mcode-log' to v0.2.5
+    - Upgrade 'mcode-log' to v0.2.5
 * 0.2.4
-    * Upgrade 'mcode-log' to v0.2.4
+    - Upgrade 'mcode-log' to v0.2.4
 * 0.2.2
-    * Upgrade 'mcode-log' to v0.2.2
+    - Upgrade 'mcode-log' to v0.2.2
 * 0.2.1
-    * Upgrade 'mcode-log' to v0.2.1
+    - Upgrade 'mcode-log' to v0.2.1
 * 0.2.0
-    * Upgrade 'mcode-log' to v0.2.0, sync'ed package versions to v0.2.0
+    - Upgrade 'mcode-log' to v0.2.0, sync'ed package versions to v0.2.0
 * 0.1.11
-    * upgraded to 'mcode-log' v0.1.18
+    - upgraded to 'mcode-log' v0.1.18
 * 0.1.10
-    * upgraded to 'mcode-log' v0.1.17
+    - upgraded to 'mcode-log' v0.1.17
 * 0.1.9
-    * upgraded to 'mcode-log' v0.1.16
+    - upgraded to 'mcode-log' v0.1.16
 * 0.1.8
-    * Added the display of sub-package versions on load.
+    - Added the display of sub-package versions on load.
 * 0.1.7
-    * Improved README examples, corrected typos.
+    - Improved README examples, corrected typos.
 * 0.1.6
-    * Changed export to the Univeral Module Defintion (UMD) pattern.
-* 0.1.0 - 0.1.5
-    * Rewrote code to load all functions and elements from an included mcode-* package into 'mcode.*'.
-    * Removed the need to update this package with explicit references when features are added to a bundled package.
+    - Changed export to the Univeral Module Defintion (UMD) pattern.
+* 0.1.0 * 0.1.5
+    - Rewrote code to load all functions and elements from an included mcode-* package into 'mcode.*'.
+    - Removed the need to update this package with explicit references when features are added to a bundled package.
 * 0.0.8
-    * Upgraded to 'mcode-log' v0.1.8
-* 0.0.6 - 0.0.7
-    * Updated README with pictures illustrating how 'mcode-package' brings togther other MicroCODE packages under 'mcode.*'.
+    - Upgraded to 'mcode-log' v0.1.8
+* 0.0.6 * 0.0.7
+    - Updated README with pictures illustrating how 'mcode-package' brings togther other MicroCODE packages under 'mcode.*'.
 * 0.0.5
-    * Upgraded to 'mcode-log' v0.1.5
-* 0.0.3 - 0.0.4
-    * Corrected JSDocs and Jest to DEV ONLY dependencies
+    - Upgraded to 'mcode-log' v0.1.5
+* 0.0.3 * 0.0.4
+    - Corrected JSDocs and Jest to DEV ONLY dependencies
 * 0.0.2
-    * Published to NPM
+    - Published to NPM
 * 0.0.1
-    * Initial movement of our internal code into an NPM bundled packages for ease of use in other projects.
+    - Initial movement of our internal code into an NPM bundled packages for ease of use in other projects.
 
 ## Future Development
 
 * 0.0.*
-    * Any additional core code we development for general JavaScript MERN coding, debug, and support.
+    - Any additional core code we development for general JavaScript MERN coding, debug, and support.
 
 
 ## License

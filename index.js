@@ -87,7 +87,7 @@ const packageJson = require('./package.json');
 // #region  C O N S T A N T S, F U N C T I O N S – P U B L I C
 
 // MicroCODE: define this module's name for our 'mcode-log' package
-const moduleName = 'mcode-package.js';
+const MODULE_NAME = 'mcode-package.js';
 
 // gather all installed mcode-<package> modules into one object
 const mcode = {};
@@ -103,7 +103,7 @@ try
     // assign all mcode-log methods to mcode
     Object.assign(mcode, mcodeLog);
 
-    log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-log' v${mcodeLogJson.version} `, moduleName);
+    log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-log' v${mcodeLogJson.version} `, MODULE_NAME);
 }
 catch (exp)
 {
@@ -119,7 +119,23 @@ try
     // assign all mcode-list methods to mcode
     Object.assign(mcode, mcodeList);
 
-    log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-list' v${mcodeListJson.version} `, moduleName);
+    log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-list' v${mcodeListJson.version} `, MODULE_NAME);
+}
+catch (exp)
+{
+    // mcode-list is not installed - OPTIONAL, no error thrown
+}
+
+// Load: M C O D E - D A T A
+try
+{
+    const mcodeData = require('mcode-data');
+    const mcodeDataJson = require('mcode-data/package.json');
+
+    // assign all mcode-data methods to mcode
+    Object.assign(mcode, mcodeData);
+
+    log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-data' v${mcodeDataJson.version} `, MODULE_NAME);
 }
 catch (exp)
 {
