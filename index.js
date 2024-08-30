@@ -57,6 +57,9 @@
  *  30-Jan-2024   TJM-MCODE  {0001}   New module to house all our public MicroCODE packages.
  *  01-Feb-2024   TJM-MCODE  {0002}   Changed to the Universal Module Definition (UMD) pattern to support AMD,
  *                                    CommonJS/Node.js, and browser global in our exported module.
+ *  28-Jun-2024   TJM-MCODE  {0003}   Added 'mcode-data' package to the list of MicroCODE packages.
+ *  28-Aug-2024   TJM-MCODE  {0004}   Added 'mcode-cache' package to the list of MicroCODE packages.
+ *  29-Aug-2024   TJM-MCODE  {0005}   Changed 'mcode' package merge to get all methods and properties (get/set).
  *
  *
  *
@@ -84,13 +87,18 @@ const packageJson = require('./package.json');
 
 // #endregion
 
-// #region  C O N S T A N T S, F U N C T I O N S – P U B L I C
+// #region  C O N S T A N T S
 
 // MicroCODE: define this module's name for our 'mcode-log' package
 const MODULE_NAME = 'mcode-package.js';
 
-// gather all installed mcode-<package> modules into one object
-const mcode = {};
+/**
+ * @namespace mcode
+ * @desc mcode namespace containing functions and constants.
+ */
+const mcode = {
+
+};
 
 // L O A D   A L L   M C O D E   P A C K A G E S...
 
@@ -100,8 +108,8 @@ try
     const mcodeLog = require('mcode-log');
     const mcodeLogJson = require('mcode-log/package.json');
 
-    // assign all mcode-log methods to mcode
-    Object.assign(mcode, mcodeLog);
+    // Assign all methods and properties to mcode, preserving getters and setters
+    Object.defineProperties(mcode, Object.getOwnPropertyDescriptors(mcodeLog));
 
     log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-log' v${mcodeLogJson.version} `, MODULE_NAME);
 }
@@ -116,8 +124,8 @@ try
     const mcodeList = require('mcode-list');
     const mcodeListJson = require('mcode-list/package.json');
 
-    // assign all mcode-list methods to mcode
-    Object.assign(mcode, mcodeList);
+    // Assign all methods and properties to mcode, preserving getters and setters
+    Object.defineProperties(mcode, Object.getOwnPropertyDescriptors(mcodeList));
 
     log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-list' v${mcodeListJson.version} `, MODULE_NAME);
 }
@@ -132,14 +140,31 @@ try
     const mcodeData = require('mcode-data');
     const mcodeDataJson = require('mcode-data/package.json');
 
-    // assign all mcode-data methods to mcode
-    Object.assign(mcode, mcodeData);
+    // Assign all methods and properties to mcode, preserving getters and setters
+    Object.defineProperties(mcode, Object.getOwnPropertyDescriptors(mcodeData));
 
     log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-data' v${mcodeDataJson.version} `, MODULE_NAME);
 }
 catch (exp)
 {
     // mcode-list is not installed - OPTIONAL, no error thrown
+}
+
+// Load: M C O D E - C A C H E
+try
+{
+    const mcodeCache = require('mcode-cache');
+    const mcodeCacheJson = require('mcode-cache/package.json');
+
+    // Assign all methods and properties to mcode, preserving getters and setters
+    Object.defineProperties(mcode, Object.getOwnPropertyDescriptors(mcodeCache));
+
+    log.success(`MicroCODE 'mcode-package' v${packageJson.version} - loaded package: 'mcode-cache' v${mcodeCacheJson.version} `, MODULE_NAME);
+}
+catch (exp)
+{
+    // mcode-cache is not installed - OPTIONAL, no error thrown
+    mcode.exp('mcode-cache failed to load.', MODULE_NAME, exp);
 }
 
 // #endregion

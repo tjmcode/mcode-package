@@ -14,16 +14,21 @@ These utilities are identical on both...
 This is our internal app construction code. These are the tools we use continuously to build robust '24x7x365'code.
 The current packages bundled by this are:
 
-* **mcode-log** - provides an consistent set of functions for logging events into any console, with severity.
-* **mcode-list** - provides an consistent set of function for handling list processing chores.
+* **mcode-data** - provides an consistent set of functions for data testing and conversion chores.
+* **mcode-log** - provides an consistent set of functions for logging events into any console, with severity and colorization.
+* **mcode-list** - provides an consistent set of functions for handling list processing chores.
+* **mcode-cache** - provides an simple, consistent set of functions for caching files, keys, or database records using Redis.
 
 
 ## Dependencies
 
 * **Production**
 1) _None_
-2) mcode-log (optional)
-3) mcode-list (optional)
+2) mcode-data (optional)
+3) mcode-log (optional)
+4) mcode-list (optional)
+5) mcode-cache (optional)
+
 * **Development**
 1) Node.JS - standard runtime environment
 2) JSDocs - our preferred JavaScript documentation system
@@ -39,14 +44,16 @@ Use "npm install" to install the 'bundler' and then all required MicroCODE packa
 
 ```
 npm install mcode-package
+npm install mcode-data
 npm install mcode-log
 npm install mcode-list
+npm install mcode-cache
 ...
 ```
 
 ## mcode-package (NPM 'Bundling')
 
-This is a console log to demonstrate how the **mcode.log** and **mcode-list** NPM packages are brought together under a single 'mcode' object...
+This is a console log to demonstrate how the **mcode.data**, **mcode.log**, **mcode.list** and **mcode-cache** NPM packages are brought together under a single 'mcode' object...
 
 * This shows 'mcode' as logged by its own function '**mcode.debug()**'...
 
@@ -85,8 +92,10 @@ These are the functions we want at the ready in any module for development and d
 
 | Function	         | Description                                                 | Usage                     |
 |--------------------|-------------------------------------------------------------|---------------------------|
+| **mcode-data**     | A collection of data handling functions and utilities       | mcode.isObject(), mcode.listifyArray(), mcode.octify(), etc.
 | **mcode-log**      | A collection of event logging functions and utilities       | mcode.log(), mcode.warn(), mcode.exp(), etc.
 | **mcode-list**     | A collection of list processing fucntions and utilities     | mcode.swap(), mcode.call(), mcode.add(), etc.
+| **mcode-cache**    | A collection of data caching fucntions and utilities        | mcode.fileRead(), mcode.redisGet(), mcode.redisSet(), etc.
 
 
 ### Documentation
@@ -146,6 +155,13 @@ Contributor's names and contact info...
 
 ## Version History
 
+* 0.5.0 - 0.5.2
+    - All 'mcode-*' packages updated with 'ready()' only implemented in 'mcode-log'.
+    - Added internal 'mcode-cache' package.
+* 0.4.2
+    - Added mcode-cache and updated to latest log, data, and list.
+* 0.4.1
+    - Synchronized mcode-data, mcode-log, mcode-list, mcode-package.
 * 0.4.0
     - Synchronized mcode-data, mcode-log, mcode-list, mcode-package.
 * 0.3.8
