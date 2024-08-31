@@ -155,7 +155,7 @@ Contributor's names and contact info...
 
 ## Version History
 
-* 0.5.0 - 0.5.2
+* 0.5.0 - 0.5.3
     - All 'mcode-*' packages updated with 'ready()' only implemented in 'mcode-log'.
     - Added internal 'mcode-cache' package.
 * 0.4.2
