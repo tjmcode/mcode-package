@@ -155,6 +155,8 @@ Contributor's names and contact info...
 
 ## Version History
 
+* 0.6.1
+    - Missed mcode-cache v0.6.0, arrrggh.
 * 0.6.0
     - Updated mcode-data, mcode-log, mcode-list and mcode-cache.
     - The updated to mcode-cache is a BREAKING CHANGE because it now support multiple caches
