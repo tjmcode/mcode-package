@@ -155,6 +155,11 @@ Contributor's names and contact info...
 
 ## Version History
 
+* 0.6.0
+    - Updated mcode-data, mcode-log, mcode-list and mcode-cache.
+    - The updated to mcode-cache is a BREAKING CHANGE because it now support multiple caches
+      node-cache and redis *at the same time* for different App needs. This changed some existing
+      functions named 'redis*' to 'cache*' to become agnostic.
 * 0.5.0 - 0.5.3
     - All 'mcode-*' packages updated with 'ready()' only implemented in 'mcode-log'.
     - Added internal 'mcode-cache' package.
