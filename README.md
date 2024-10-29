@@ -155,70 +155,72 @@ Contributor's names and contact info...
 
 ## Version History
 
-* 0.6.1
+* v0.6.2
+    - upgraded to mcode-data v0.5.5, mcode-log v0.5.5, mcode-list v0.5.5, and mcode-cacge v0.6.2
+* v0.6.1
     - Missed mcode-cache v0.6.0, arrrggh.
-* 0.6.0
+* v0.6.0
     - Updated mcode-data, mcode-log, mcode-list and mcode-cache.
     - The updated to mcode-cache is a BREAKING CHANGE because it now support multiple caches
       node-cache and redis *at the same time* for different App needs. This changed some existing
       functions named 'redis*' to 'cache*' to become agnostic.
-* 0.5.0 - 0.5.3
+* v0.5.0 - 0.5.3
     - All 'mcode-*' packages updated with 'ready()' only implemented in 'mcode-log'.
     - Added internal 'mcode-cache' package.
-* 0.4.2
+* v0.4.2
     - Added mcode-cache and updated to latest log, data, and list.
-* 0.4.1
+* v0.4.1
     - Synchronized mcode-data, mcode-log, mcode-list, mcode-package.
-* 0.4.0
+* v0.4.0
     - Synchronized mcode-data, mcode-log, mcode-list, mcode-package.
-* 0.3.8
+* v0.3.8
     - Moved all data handling functions into new mcode-data package.
-* 0.3.0
+* v0.3.0
     - Upgrade 'mcode-log' to v0.3.0
     - Upgrade 'mcode-list' to v0.3.0
-* 0.2.6
+* v0.2.6
     - Upgrade 'mcode-log' to v0.2.6
-* 0.2.5
+* v0.2.5
     - Upgrade 'mcode-log' to v0.2.5
-* 0.2.4
+* v0.2.4
     - Upgrade 'mcode-log' to v0.2.4
-* 0.2.2
+* v0.2.2
     - Upgrade 'mcode-log' to v0.2.2
-* 0.2.1
+* v0.2.1
     - Upgrade 'mcode-log' to v0.2.1
-* 0.2.0
+* v0.2.0
     - Upgrade 'mcode-log' to v0.2.0, sync'ed package versions to v0.2.0
-* 0.1.11
+* v0.1.11
     - upgraded to 'mcode-log' v0.1.18
-* 0.1.10
+* v0.1.10
     - upgraded to 'mcode-log' v0.1.17
-* 0.1.9
+* v0.1.9
     - upgraded to 'mcode-log' v0.1.16
-* 0.1.8
+* v0.1.8
     - Added the display of sub-package versions on load.
-* 0.1.7
+* v0.1.7
     - Improved README examples, corrected typos.
-* 0.1.6
+* v0.1.6
     - Changed export to the Univeral Module Defintion (UMD) pattern.
-* 0.1.0 * 0.1.5
+* v0.1.0 * v0.1.5
     - Rewrote code to load all functions and elements from an included mcode-* package into 'mcode.*'.
     - Removed the need to update this package with explicit references when features are added to a bundled package.
-* 0.0.8
+* v0.0.8
     - Upgraded to 'mcode-log' v0.1.8
-* 0.0.6 * 0.0.7
+* v0.0.6 * v0.0.7
     - Updated README with pictures illustrating how 'mcode-package' brings togther other MicroCODE packages under 'mcode.*'.
-* 0.0.5
+* v0.0.5
     - Upgraded to 'mcode-log' v0.1.5
-* 0.0.3 * 0.0.4
+* v0.0.3 * v0.0.4
     - Corrected JSDocs and Jest to DEV ONLY dependencies
-* 0.0.2
+* v0.0.2
     - Published to NPM
-* 0.0.1
+* v0.0.1
     - Initial movement of our internal code into an NPM bundled packages for ease of use in other projects.
 
 ## Future Development
 
-* 0.0.*
+* v0.0.*
     - Any additional core code we development for general JavaScript MERN coding, debug, and support.
 
 
